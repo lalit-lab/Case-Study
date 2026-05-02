@@ -505,185 +505,178 @@
                     <span style="background:rgba(220,38,38,0.25);color:#fca5a5;border:1px solid rgba(220,38,38,0.4);font-size:9px;font-weight:900;padding:3px 12px;border-radius:99px;letter-spacing:0.08em;">INTERCEPTED</span>
                 </div>
 
-                <!-- Realistic Telegram app UI -->
-                <div style="background:#0e1621;font-family:'Outfit',sans-serif;">
+                <!-- Desktop Telegram Window -->
+                <div style="font-family:'Outfit',sans-serif;">
 
-                    <!-- Phone status bar -->
-                    <div style="background:#17212b;padding:5px 16px 3px;display:flex;align-items:center;justify-content:space-between;">
-                        <span style="color:#e8f4fd;font-size:11px;font-weight:700;">3:42</span>
-                        <div style="display:flex;align-items:center;gap:5px;">
-                            <i class="fa-solid fa-signal" style="color:#e8f4fd;font-size:10px;"></i>
-                            <i class="fa-solid fa-wifi" style="color:#e8f4fd;font-size:10px;"></i>
-                            <i class="fa-solid fa-battery-three-quarters" style="color:#e8f4fd;font-size:10px;"></i>
+                    <!-- OS Window Title Bar -->
+                    <div style="background:#f0f0f0;padding:5px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ddd;">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <div style="width:14px;height:14px;border-radius:50%;background:#5b9bd5;display:flex;align-items:center;justify-content:center;">
+                                <i class="fa-brands fa-telegram" style="color:#fff;font-size:8px;"></i>
+                            </div>
+                            <span style="color:#555;font-size:11px;font-weight:500;">CS Pro Syndicate — Telegram</span>
+                        </div>
+                        <div style="display:flex;gap:14px;color:#888;font-size:13px;">
+                            <span style="cursor:pointer;">&#x2500;</span>
+                            <span style="cursor:pointer;">&#x25A1;</span>
+                            <span style="cursor:pointer;color:#c0392b;">&#x2715;</span>
                         </div>
                     </div>
 
-                    <!-- App top bar -->
-                    <div style="background:#17212b;padding:8px 14px 10px;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,0.04);">
-                        <i class="fa-solid fa-chevron-left" style="color:#5b9bd5;font-size:17px;"></i>
-                        <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#2b6cb0,#1a3a5c);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#7ec8e3;font-size:15px;">C</div>
-                        <div style="flex:1;min-width:0;">
-                            <div style="color:#e8f4fd;font-weight:700;font-size:14px;">CS Pro Syndicate</div>
-                            <div style="color:#6a8fa8;font-size:11px;">247 members, 18 online</div>
+                    <!-- Telegram App Header -->
+                    <div style="background:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e8e8e8;">
+                        <div>
+                            <div style="font-weight:700;font-size:14px;color:#1a1a1a;">CS Pro Syndicate</div>
+                            <div style="font-size:11px;color:#999;">247 members, 18 online</div>
                         </div>
-                        <i class="fa-solid fa-phone" style="color:#8899aa;font-size:14px;"></i>
-                        <i class="fa-solid fa-magnifying-glass" style="color:#8899aa;font-size:14px;margin-left:12px;"></i>
-                        <i class="fa-solid fa-ellipsis-vertical" style="color:#8899aa;font-size:14px;margin-left:12px;"></i>
+                        <div style="display:flex;gap:16px;align-items:center;">
+                            <i class="fa-solid fa-magnifying-glass" style="color:#bbb;font-size:14px;"></i>
+                            <i class="fa-solid fa-table-cells" style="color:#bbb;font-size:14px;"></i>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color:#bbb;font-size:14px;"></i>
+                        </div>
                     </div>
 
-                    <!-- Messages -->
-                    <div style="padding:10px 12px;display:flex;flex-direction:column;gap:1px;background:#0e1621;">
+                    <!-- Pinned message bar -->
+                    <div style="background:#fff;padding:7px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #efefef;cursor:pointer;">
+                        <i class="fa-solid fa-thumbtack" style="color:#5b9bd5;font-size:12px;transform:rotate(45deg);"></i>
+                        <div style="flex:1;min-width:0;border-left:3px solid #5b9bd5;padding-left:8px;">
+                            <div style="color:#5b9bd5;font-size:10.5px;font-weight:600;">Pinned message</div>
+                            <div style="font-size:11.5px;color:#666;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">BLAST Rivals Fall 2025 — Match Day. Today's matches start 19:00 CET 🏆</div>
+                        </div>
+                        <i class="fa-solid fa-xmark" style="color:#ccc;font-size:12px;"></i>
+                    </div>
 
-                        <!-- Date stamp -->
-                        <div style="text-align:center;margin:6px 0 10px;">
-                            <span style="background:#182533;color:#6a8fa8;font-size:11px;padding:3px 14px;border-radius:10px;">Today</span>
+                    <!-- Messages area — green wallpaper -->
+                    <div style="background:#c8dba8;padding:10px 14px;display:flex;flex-direction:column;gap:2px;">
+
+                        <!-- Date pill -->
+                        <div style="text-align:center;margin:2px 0 8px;">
+                            <span style="background:rgba(0,0,0,0.18);color:#fff;font-size:11px;padding:3px 14px;border-radius:10px;">Today</span>
                         </div>
 
-                        <!-- Generic msg 1 — Pro_Analyst -->
+                        <!-- Pro_Analyst msg 1 -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">P</div>
-                            <div style="max-width:78%;">
-                                <div style="color:#b97fd4;font-size:11.5px;font-weight:700;margin-bottom:2px;padding-left:2px;">Pro_Analyst</div>
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.5;">
-                                    blast group stage today should be interesting. some strong matchups
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">8:34 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">P</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#b97fd4;font-size:12px;font-weight:700;margin-bottom:3px;">Pro_Analyst</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">blast group stage today should be interesting. some strong matchups</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:34</span></div>
                             </div>
                         </div>
 
-                        <!-- Generic msg 2 — scout99 -->
+                        <!-- scout99 msg 1 -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">S</div>
-                            <div style="max-width:78%;">
-                                <div style="color:#e07b3a;font-size:11.5px;font-weight:700;margin-bottom:2px;padding-left:2px;">scout99</div>
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.5;">
-                                    yeah been tracking this team all season.
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">8:51 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">S</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#e07b3a;font-size:12px;font-weight:700;margin-bottom:3px;">scout99</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">yeah been tracking this team all season.</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:51</span></div>
                             </div>
                         </div>
 
-                        <!-- Generic msg 3 — Pro_Analyst reply -->
+                        <!-- Pro_Analyst msg 2 -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">P</div>
-                            <div style="max-width:78%;">
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:14px;font-size:13px;line-height:1.5;">
-                                    true. veto will be key today
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">8:53 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">P</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#b97fd4;font-size:12px;font-weight:700;margin-bottom:3px;">Pro_Analyst</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">true. veto will be key today</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:53</span></div>
                             </div>
                         </div>
 
-                        <!-- Generic msg 4 — NightOwl_V -->
+                        <!-- NightOwl_V -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#1a5c6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">N</div>
-                            <div style="max-width:78%;">
-                                <div style="color:#3ab8d4;font-size:11.5px;font-weight:700;margin-bottom:2px;padding-left:2px;">NightOwl_V</div>
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.5;">
-                                    anyone have the confirmed lineups yet?
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">9:22 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a5c6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">N</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#3ab8d4;font-size:12px;font-weight:700;margin-bottom:3px;">NightOwl_V</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">anyone have the confirmed lineups yet?</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">9:22</span></div>
                             </div>
                         </div>
 
-                        <!-- Generic msg 5 — scout99 -->
+                        <!-- scout99 msg 2 -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">S</div>
-                            <div style="max-width:78%;">
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:14px;font-size:13px;line-height:1.5;">
-                                    full roster, no subs
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">9:31 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">S</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#e07b3a;font-size:12px;font-weight:700;margin-bottom:3px;">scout99</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">full roster, no subs</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">9:31</span></div>
                             </div>
                         </div>
 
-                        <!-- K_intel opens convo — normal message -->
+                        <!-- K_intel opens convo -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">K</div>
-                            <div style="max-width:78%;">
-                                <div style="color:#4caf80;font-size:11.5px;font-weight:700;margin-bottom:2px;padding-left:2px;">K_intel</div>
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.5;">
-                                    anyone watching the match tonight
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">10:08 AM</span>
-                                    </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
                                 </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">anyone watching the match tonight</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:08</span></div>
                             </div>
                         </div>
 
-                        <!-- RawSource_7 normal reply -->
+                        <!-- RawSource_7 reply -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">R</div>
-                            <div style="max-width:78%;">
-                                <div style="color:#5b9bd5;font-size:11.5px;font-weight:700;margin-bottom:2px;padding-left:2px;">RawSource_7</div>
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.5;">
-                                    yeah obviously 🫡 btw got something to share — X won't be putting in a performance on their second map. solid source 🤫
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">10:16 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">R</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#5b9bd5;font-size:12px;font-weight:700;margin-bottom:3px;">RawSource_7</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">yeah obviously 🫡 btw got something to share — X won't be putting in a performance on their second map. solid source 🤫</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:16</span></div>
                             </div>
                         </div>
 
-                        <!-- K_intel surprised -->
+                        <!-- K_intel surprised — reply quote -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">K</div>
-                            <div style="max-width:78%;">
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:14px;font-size:13px;line-height:1.5;">
-                                    lol wait he never has a bad game 😭
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">10:17 AM</span>
-                                    </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
                                 </div>
+                                <div style="border-left:3px solid #5b9bd5;padding:3px 8px 3px 10px;background:#f0f6ff;border-radius:0 6px 6px 0;margin-bottom:6px;">
+                                    <div style="color:#5b9bd5;font-size:10.5px;font-weight:600;margin-bottom:1px;">RawSource_7</div>
+                                    <div style="color:#777;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;">yeah obviously 🫡 btw got something to share...</div>
+                                </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">lol wait he never has a bad game 😭</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:17</span></div>
                             </div>
                         </div>
 
                         <!-- RawSource_7 reassures -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">R</div>
-                            <div style="max-width:78%;">
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:14px;font-size:13px;line-height:1.5;">
-                                    not today. just keep a close eye on map 2. you'll see
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">10:19 AM</span>
-                                    </div>
-                                </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">R</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#5b9bd5;font-size:12px;font-weight:700;margin-bottom:3px;">RawSource_7</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">not today. just keep a close eye on map 2. you'll see</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:19</span></div>
                             </div>
                         </div>
 
-                        <!-- K_intel short ack -->
+                        <!-- K_intel ack -->
                         <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
-                            <div style="width:32px;height:32px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:12px;">K</div>
-                            <div style="max-width:78%;">
-                                <div style="background:#182533;color:#cdd9e5;padding:8px 12px 6px;border-radius:14px;font-size:13px;line-height:1.5;">
-                                    noted 👀
-                                    <div style="display:flex;justify-content:flex-end;align-items:center;gap:4px;margin-top:3px;">
-                                        <span style="color:#60748a;font-size:10px;">10:20 AM</span>
-                                    </div>
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
                                 </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">noted 👀</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:20</span></div>
                             </div>
                         </div>
-
 
                     </div>
 
                     <!-- Input bar -->
-                    <div style="background:#17212b;padding:9px 12px;display:flex;align-items:center;gap:10px;border-top:1px solid rgba(255,255,255,0.04);">
-                        <i class="fa-solid fa-face-smile" style="color:#6a8fa8;font-size:19px;"></i>
-                        <div style="flex:1;background:#0e1621;border-radius:22px;padding:9px 15px;color:#4a6070;font-size:13px;">Message</div>
-                        <i class="fa-solid fa-paperclip" style="color:#6a8fa8;font-size:17px;"></i>
-                        <div style="width:36px;height:36px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;">
-                            <i class="fa-solid fa-microphone" style="color:#fff;font-size:14px;"></i>
+                    <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;border-top:1px solid #e8e8e8;">
+                        <i class="fa-solid fa-paperclip" style="color:#bbb;font-size:17px;"></i>
+                        <div style="width:34px;height:34px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:13px;">K</div>
+                        <div style="flex:1;background:#f4f4f4;border-radius:22px;padding:9px 15px;font-size:13px;color:#aaa;">Message</div>
+                        <i class="fa-solid fa-face-smile" style="color:#bbb;font-size:19px;"></i>
+                        <div style="width:36px;height:36px;border-radius:50%;background:#5b9bd5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <i class="fa-solid fa-paper-plane" style="color:#fff;font-size:14px;"></i>
                         </div>
                     </div>
                 </div>
