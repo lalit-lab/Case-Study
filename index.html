@@ -29,10 +29,9 @@
     </script>
 
     <style>
-        .chart-container { position:relative; width:100%; max-width:none; margin:0 auto; height:360px; }
+        .chart-container { position:relative; width:100%; max-width:800px; margin:0 auto; height:320px; }
         .nav-link.active { background-color:#1e3a5f; color:white; box-shadow:0 4px 14px -2px rgba(30,58,95,0.35); }
         .glass-card { background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); border:1px solid rgba(226,232,240,0.8); }
-        .profile-player-card > div:first-child { display:none; }
         .no-scrollbar::-webkit-scrollbar { display:none; }
         .no-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
         .tournament-table th { background:#1e3a5f; color:#c9a84c; font-size:11px; text-transform:uppercase; letter-spacing:0.1em; padding:14px; }
@@ -51,14 +50,14 @@
     <div class="p-8 border-b border-slate-100 bg-brand">
         <div class="flex items-center justify-between text-white mb-1">
             <div class="flex items-center space-x-2">
-                <span class="text-2xl font-black tracking-tighter">Multilayer Analysis Platform</span>
-                <!-- <span class="text-[10px] bg-white/10 border border-white/20 text-white/80 px-2 py-0.5 rounded font-mono font-bold">INTEL</span> -->
+                <span class="text-2xl font-black tracking-tighter">MAP</span>
+                <span class="text-[10px] bg-white/10 border border-white/20 text-white/80 px-2 py-0.5 rounded font-mono font-bold">INTEL</span>
             </div>
             <button onclick="toggleSidebar()" title="Hide panel" style="background:rgba(255,255,255,0.1);border:none;color:rgba(255,255,255,0.7);padding:6px 10px;border-radius:8px;cursor:pointer;font-size:14px;">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
         </div>
-        <div class="text-[10px] text-white/40 font-bold uppercase tracking-widest">Case ID: 092-X-MAKA</div>
+        <div class="text-[10px] text-white/40 font-bold uppercase tracking-widest">Case ID: 092-X-ANOMALY</div>
     </div>
 
     <nav class="flex-1 p-4 space-y-2 overflow-y-auto no-scrollbar">
@@ -98,18 +97,15 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
             <div class="space-y-3">
                 <div class="inline-flex items-center px-3 py-1 bg-brand/5 border border-brand/10 rounded-full text-[10px] font-black text-brand tracking-widest uppercase">
-                    Status: High Integrity Risk 
+                    Status: High Integrity Risk Detected
                 </div>
-                <h1 class="text-5xl font-extrabold text-brand tracking-tight leading-none">Player Profile<br><span class="text-slate-400"> </span></h1>
+                <h1 class="text-5xl font-extrabold text-brand tracking-tight leading-none">Player Profile<br><span class="text-slate-400">Behavioral Anomaly</span></h1>
             </div>
-            <div class="profile-player-card glass-card p-6 rounded-3xl shadow-sm border-l-4 border-gold flex items-center space-x-6 min-w-[320px]">
+            <div class="glass-card p-6 rounded-3xl shadow-sm border-l-4 border-gold flex items-center space-x-6 min-w-[320px]">
                 <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center text-3xl">👤</div>
-                <div class="w-20 h-24 bg-slate-100 rounded-2xl overflow-hidden flex-shrink-0 shadow-sm border border-slate-200">
-                    <img src="MAKA.jpeg" alt="Player Maka" class="w-full h-full object-cover object-top">
-                </div>
                 <div>
-                    <div class="text-xl font-bold text-brand">Player Maka</div>
-                    <div class="text-xs text-slate-400 font-mono uppercase">Pos 1/5 • Tier 1 Rank #12</div>
+                    <div class="text-xl font-bold text-brand">Player X</div>
+                    <div class="text-xs text-slate-400 font-mono uppercase">Pos 2/5 • Tier 1 Rank X</div>
                 </div>
             </div>
         </div>
@@ -118,26 +114,26 @@
         <div class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm mb-8">
             <div style="background:linear-gradient(135deg,#1e3a5f 0%,#0f2340 100%);" class="px-8 py-5 flex items-center justify-between">
                 <div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest mb-1" style="color:rgba(255,255,255,0.45);">Tournament</div>
-                    <div class="text-white font-black text-base uppercase tracking-wide">Starladder 2025</div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest mb-1" style="color:rgba(255,255,255,0.45);">Tournament Background</div>
+                    <div class="text-white font-black text-base uppercase tracking-wide">BLAST Rivals Fall 2025</div>
                 </div>
-                <span style="background:rgba(201,168,76,0.2);color:#c9a84c;border:1px solid rgba(201,168,76,0.4);font-size:10px;font-weight:900;padding:5px 16px;border-radius:99px;">KNOCKOUT MATCH</span>
+                <span style="background:rgba(201,168,76,0.2);color:#c9a84c;border:1px solid rgba(201,168,76,0.4);font-size:10px;font-weight:900;padding:5px 16px;border-radius:99px;">GROUP STAGE</span>
             </div>
             <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:20px;" class="p-5">
                     <div class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Competition</div>
-                    <div class="text-sm font-black text-brand">Starladder 2025</div>
-                    <div class="text-[10px] font-mono text-slate-400 mt-1">Knockout Match · Best of 3 (7th Dec 2025)</div>
+                    <div class="text-sm font-black text-brand">BLAST Rivals Fall 2025</div>
+                    <div class="text-[10px] font-mono text-slate-400 mt-1">Group Stage · Best of 3</div>
                 </div>
                 <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:20px;" class="p-5">
                     <div class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Flagged Match</div>
-                    <div class="text-sm font-black text-brand">Map 2</div>
-                    <div class="text-[10px] font-mono text-slate-400 mt-1">Critical Knockout Match Fixture</div>
+                    <div class="text-sm font-black text-brand">Match X</div>
+                    <div class="text-[10px] font-mono text-slate-400 mt-1">Critical group stage fixture</div>
                 </div>
                 <div style="background:#fef2f2;border:1.5px solid #fecaca;border-radius:20px;" class="p-5">
                     <div class="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Match Outcome</div>
-                    <div class="text-sm font-black text-anomaly">Series Lost (2-0)</div>
-                    <div class="text-[10px] font-mono text-slate-400 mt-1"> </div>
+                    <div class="text-sm font-black text-anomaly">Series Lost</div>
+                    <div class="text-[10px] font-mono text-slate-400 mt-1">Player X key underperformer</div>
                 </div>
             </div>
         </div>
@@ -149,11 +145,11 @@
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div class="flex items-start justify-between mb-4">
                         <div class="text-anomaly text-2xl"><i class="fa-solid fa-scale-unbalanced"></i></div>
-                        <span style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">−1.0 pts</span>
+                        <span style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">−2.0 pts</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-brand mb-1">Odds movement</h3>
-                        <p class="text-xs text-slate-400">14.5 → 13.5 drop at T2-15 min</p>
+                        <h3 class="font-bold text-brand mb-1">Market Move</h3>
+                        <p class="text-xs text-slate-400">14.5 → 12.5 drop at T-75 min. Pre-match insider exposure detected.</p>
                     </div>
                 </div>
             </div>
@@ -162,11 +158,11 @@
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div class="flex items-start justify-between mb-4">
                         <div class="text-gold text-2xl"><i class="fa-solid fa-rotate"></i></div>
-                        <span style="background:#fef9ee;color:#c9a84c;border:1px solid rgba(201,168,76,0.4);font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">MAP 2</span>
+                        <span style="background:#fef9ee;color:#c9a84c;border:1px solid rgba(201,168,76,0.4);font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">MAP 1→2</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-brand mb-1">Performance matrix</h3>
-                        <p class="text-xs text-slate-400">Dominant on weakest map. Poor performance on strongest map.</p>
+                        <h3 class="font-bold text-brand mb-1">Inversion Paradox</h3>
+                        <p class="text-xs text-slate-400">Dominant on weakest map (won). Systemic failure on strongest (lost).</p>
                     </div>
                 </div>
             </div>
@@ -175,11 +171,11 @@
                 <div class="p-6 flex-1 flex flex-col justify-between">
                     <div class="flex items-start justify-between mb-4">
                         <div class="text-anomaly text-2xl"><i class="fa-solid fa-arrow-trend-down"></i></div>
-                        <!-- <span style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">−40% KPIs</span> -->
+                        <span style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:900;padding:3px 10px;border-radius:99px;">−40% KPIs</span>
                     </div>
                     <div>
-                        <h3 class="font-bold text-brand mb-1">Intel</h3>
-                        <p class="text-xs text-slate-400">3 hours prior to the match start - comment on HLTV site.</p>
+                        <h3 class="font-bold text-brand mb-1">Output Collapse</h3>
+                        <p class="text-xs text-slate-400">Uniform collapse across KDR, KPR, ADR on Map 2 focal point.</p>
                     </div>
                 </div>
             </div>
@@ -193,26 +189,26 @@
     <div class="max-w-6xl mx-auto">
         <div class="mb-10">
             <h2 class="text-3xl font-extrabold text-brand mb-1">Market Odds</h2>
-            <p class="text-slate-500 leading-relaxed max-w-3xl">The kill line for Map 2 dropped 1.0 point 15 minutes before Map 2 start — triggered after Maka's strong Map 1 performance on Dust2.</p>
+            <p class="text-slate-500 leading-relaxed max-w-3xl">The kill line for Map 2 moved 2.0 points 75 minutes prior to match start — before public veto announcement.</p>
         </div>
 
-        <div class="mb-12">
-            <div class="glass-card p-8 rounded-[2.5rem] shadow-sm mb-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+            <div class="lg:col-span-2 glass-card p-8 rounded-[2.5rem] shadow-sm">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Pre-Map Kill Line Drift</h3>
-                    <div class="text-[10px] font-mono text-anomaly font-bold border border-anomaly/20 bg-red-50 px-3 py-1 rounded-full">TARGET: MAP 2 (INFERNO)</div>
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Pre-Match Kill Line Drift</h3>
+                    <div class="text-[10px] font-mono text-anomaly font-bold border border-anomaly/20 bg-red-50 px-3 py-1 rounded-full">TARGET: MAP 2 (NUKE)</div>
                 </div>
-                <div class="chart-container" style="height:400px;"><canvas id="marketChart"></canvas></div>
+                <div class="chart-container"><canvas id="marketChart"></canvas></div>
             </div>
-            <div class="hidden flex flex-col gap-6">
+            <div class="flex flex-col gap-6">
                 <div class="glass-card rounded-3xl overflow-hidden shadow-sm">
                     <div style="background:linear-gradient(135deg,#dc2626 0%,#991b1b 100%);" class="px-8 py-5 flex items-center justify-between">
-                        <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest">Map2</div>
+                        <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest">Drift Magnitude</div>
                         <i class="fa-solid fa-arrow-trend-down text-white/50 text-base"></i>
                     </div>
                     <div class="p-8">
-                        <div class="text-5xl font-black text-anomaly mb-3 tracking-tighter">1.0 PTS</div>
-                        <p class="text-[11px] text-slate-500 leading-relaxed font-mono italic">"A sharp line drop between maps, after a strong Map 1, is a known signal of informed positioning."</p>
+                        <div class="text-5xl font-black text-anomaly mb-3 tracking-tighter">2.0 PTS</div>
+                        <p class="text-[11px] text-slate-500 leading-relaxed font-mono italic">"A drift of this magnitude pre-match is historically correlated with informed risk."</p>
                     </div>
                 </div>
                 <div class="glass-card rounded-3xl overflow-hidden shadow-sm">
@@ -221,69 +217,12 @@
                         <i class="fa-solid fa-clock text-white/50 text-base"></i>
                     </div>
                     <div class="p-8">
-                        <div class="text-3xl font-black text-brand mb-1 tracking-tighter">T2-15 min</div>
-                        <div class="text-[11px] text-slate-400 font-mono uppercase tracking-tight font-bold mb-4">Post Map 1 · Pre Map 2</div>
+                        <div class="text-3xl font-black text-brand mb-1 tracking-tighter">T-75 min</div>
+                        <div class="text-[11px] text-slate-400 font-mono uppercase tracking-tight font-bold mb-4">Pre-Match Announcement</div>
                         <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:12px;" class="px-4 py-2 text-center">
-                            <span class="text-anomaly text-[10px] font-black uppercase tracking-widest"> </span>
+                            <span class="text-anomaly text-[10px] font-black uppercase tracking-widest">Before Public Knowledge</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
-            <div class="glass-card rounded-3xl overflow-hidden shadow-sm">
-                <div style="background:linear-gradient(135deg,#1e3a5f 0%,#0f2340 100%);" class="px-8 py-5 flex items-center justify-between">
-                    <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest">Map1</div>
-                    <i class="fa-solid fa-minus text-white/50 text-base"></i>
-                </div>
-                <div class="p-8">
-                    <div class="grid grid-cols-1 gap-3">
-                        <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Map Name</div>
-                            <div class="text-sm font-black text-brand">Dust2</div>
-                        </div>
-                        <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Odds</div>
-                            <div class="text-sm font-black text-brand">13.5</div>
-                        </div>
-                        <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Fluctuation</div>
-                            <div class="text-sm font-black text-brand">No</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="glass-card rounded-3xl overflow-hidden shadow-sm">
-                <div style="background:linear-gradient(135deg,#dc2626 0%,#991b1b 100%);" class="px-8 py-5 flex items-center justify-between">
-                    <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest">Map2</div>
-                    <i class="fa-solid fa-arrow-trend-down text-white/50 text-base"></i>
-                </div>
-                <div class="p-8">
-                    <div class="grid grid-cols-1 gap-3">
-                        <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Map Name</div>
-                            <div class="text-sm font-black text-anomaly">Inferno</div>
-                        </div>
-                        <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Odds</div>
-                            <div class="text-sm font-black text-anomaly">14.5 - 13.5</div>
-                        </div>
-                        <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="p-4">
-                            <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Drop</div>
-                            <div class="text-sm font-black text-anomaly">1.0 PTS</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="glass-card rounded-3xl overflow-hidden shadow-sm">
-                <div style="background:linear-gradient(135deg,#1e3a5f 0%,#0f2340 100%);" class="px-8 py-5 flex items-center justify-between">
-                    <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest">Trigger Window</div>
-                    <i class="fa-solid fa-clock text-white/50 text-base"></i>
-                </div>
-                <div class="p-8">
-                    <div class="text-3xl font-black text-brand mb-1 tracking-tighter">T-15 min</div>
-                    <div class="text-[11px] text-slate-400 font-mono uppercase tracking-tight font-bold mb-6">Post Map 1 · Pre Map 2</div>
                 </div>
             </div>
         </div>
@@ -291,12 +230,12 @@
         <div class="bg-white rounded-[2.5rem] border border-slate-200 shadow-sm overflow-hidden">
             <div class="p-8 bg-brand flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div>
-                    <h4 class="text-gold font-bold text-lg leading-none mb-2">Maka's Performance & Odds</h4>
-                    <p class="text-white/40 text-[10px] font-mono uppercase tracking-[0.2em]">Full Market Record — Starladder 2025</p>
+                    <h4 class="text-gold font-bold text-lg leading-none mb-2">Subject's Kills Across the Tournament</h4>
+                    <p class="text-white/40 text-[10px] font-mono uppercase tracking-[0.2em]">Full Market Record — BLAST Rivals Fall 2025</p>
                 </div>
                 <div class="inline-flex items-center space-x-2 bg-red-500/10 border border-red-500/30 px-4 py-2 rounded-xl">
-                    <!-- <span class="text-anomaly animate-pulse text-lg"></span> -->
-                    <!-- <span class="text-xs font-bold text-white uppercase tracking-widest"> </span> -->
+                    <span class="text-anomaly animate-pulse text-lg">⚠️</span>
+                    <span class="text-xs font-bold text-white uppercase tracking-widest">Anomaly Flagged</span>
                 </div>
             </div>
             <div class="overflow-x-auto">
@@ -304,20 +243,18 @@
                     <thead>
                         <tr>
                             <th>Match (Map)</th>
-                            <th class="text-center">Fluctuations</th>
-                            <th>Time</th>
-                            <th>Map Name (#P)</th>
-                            <th class="text-right">Kill</th>
-                            <th>Vs Team #Position</th>
+                            <th>Map Name</th>
+                            <th class="text-center">Kills Line</th>
+                            <th class="text-right">Actual Kills</th>
                         </tr>
                     </thead>
                     <tbody id="marketTableBody" class="text-sm font-medium"></tbody>
                 </table>
             </div>
             <div class="p-6 bg-slate-50 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="text-[10px] text-slate-400 font-mono uppercase tracking-widest">Source: Betting Exchange Archives · Starladder 2025</div>
+                <div class="text-[10px] text-slate-400 font-mono uppercase tracking-widest">Source: Betting Exchange Archives · BLAST Rivals Fall 2025</div>
                 <div class="bg-red-50 border border-red-100 text-anomaly text-[10px] font-black px-4 py-2 rounded-lg">
-                    ⚠ Match X (2) — Pre-Map 2 drop: 14.5 → 13.5
+                    ⚠ Match X (2) — Pre-match drop: 14.5 → 12.5
                 </div>
             </div>
         </div>
@@ -336,7 +273,7 @@
         <div class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm mb-10">
             <div style="background:linear-gradient(135deg,#1e3a5f 0%,#0f2340 100%);" class="px-8 py-5 flex items-center justify-between">
                 <div>
-                    <div class="text-[10px] font-bold uppercase tracking-widest mb-1" style="color:rgba(255,255,255,0.45);">Match Context · Starladder 2025</div>
+                    <div class="text-[10px] font-bold uppercase tracking-widest mb-1" style="color:rgba(255,255,255,0.45);">Match Context · BLAST Rivals Fall 2025</div>
                     <div class="text-white font-black text-sm uppercase tracking-wider">Performance Inversion</div>
                 </div>
                 <span style="background:rgba(220,38,38,0.25);color:#fca5a5;border:1px solid rgba(220,38,38,0.5);font-size:10px;font-weight:900;padding:5px 16px;border-radius:99px;">KEY EVIDENCE</span>
@@ -344,25 +281,19 @@
             <div class="p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="glass-card p-8 rounded-[2.5rem] border border-emerald-100 bg-emerald-50/10">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-emerald-700 font-bold uppercase tracking-widest text-[10px]">MAP 1 (DUST2) - #7</h3>
-                        <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-[10px] font-black italic">RATING 1.02</span>
+                        <h3 class="text-emerald-700 font-bold uppercase tracking-widest text-[10px]">MAP 1 (OVERPASS)</h3>
+                        <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-[10px] font-black italic">RATING 1.09</span>
                     </div>
-                    <div class="text-5xl font-black text-brand mb-4">Best Performer</div>
-                    <p class="text-slate-500 text-sm leading-relaxed">Team Loss (13-6)</p>
-                    <div class="mt-8" style="background:#f8fafc;border:1.5px solid #d1d5db;border-radius:24px;padding:16px;">
-                        <img src="HLTV-MAP1.jpeg" alt="Map 1 Dust2 performance screenshot" class="w-full h-auto rounded-2xl shadow-sm">
-                    </div>
+                    <div class="text-5xl font-black text-brand mb-4">Top of Team</div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Team win, Played well</p>
                 </div>
                 <div class="glass-card p-8 rounded-[2.5rem] border border-red-100 bg-red-50/10">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-anomaly font-bold uppercase tracking-widest text-[10px]">MAP 2 (INFERNO) - #4</h3>
-                        <span class="bg-red-100 text-anomaly px-3 py-1 rounded-full text-[10px] font-black italic">RATING 1.13</span>
+                        <h3 class="text-anomaly font-bold uppercase tracking-widest text-[10px]">MAP 2 (NUKE)</h3>
+                        <span class="bg-red-100 text-anomaly px-3 py-1 rounded-full text-[10px] font-black italic">RATTING 1.21</span>
                     </div>
                     <div class="text-5xl font-black text-anomaly mb-4">Total Collapse</div>
-                    <p class="text-slate-500 text-sm leading-relaxed">Team Loss (13-5)</p>
-                    <div class="mt-8" style="background:#f8fafc;border:1.5px solid #d1d5db;border-radius:24px;padding:16px;">
-                        <img src="HLTV-MAP2.jpeg" alt="Map 2 Inferno performance screenshot" class="w-full h-auto rounded-2xl shadow-sm">
-                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Performance signature inverted. All core telemetry collapsed despite Map 2 being the subject's historically highest-output environment.</p>
                 </div>
             </div>
         </div>
@@ -391,12 +322,12 @@
                         <div class="grid grid-cols-2 gap-4 mb-7">
                             <div style="background:#fef2f2;border:2px solid #fecaca;" class="rounded-2xl p-5 text-center">
                                 <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Anomaly Map 2</div>
-                                <div style="font-size:2.6rem;font-weight:900;color:#dc2626;line-height:1;">5.98%</div>
-                                <div class="text-[10px] font-mono text-anomaly/70 mt-2 font-bold">14 hits / 234 shots</div>
+                                <div style="font-size:2.6rem;font-weight:900;color:#dc2626;line-height:1;">11.94%</div>
+                                <div class="text-[10px] font-mono text-anomaly/70 mt-2 font-bold">37 hits / 310 shots</div>
                             </div>
                             <div style="background:#f8fafc;border:2px solid #e2e8f0;" class="rounded-2xl p-5 text-center">
-                                <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Career Inferno Avg</div>
-                                <div style="font-size:2.6rem;font-weight:900;color:#1e3a5f;line-height:1;">10.46%</div>
+                                <div class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">Career Nuke Avg</div>
+                                <div style="font-size:2.6rem;font-weight:900;color:#1e3a5f;line-height:1;">19.77%</div>
                                 <div class="text-[10px] font-mono text-brand/50 mt-2 font-bold">Historical baseline</div>
                             </div>
                         </div>
@@ -404,26 +335,26 @@
                             <div>
                                 <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5">
                                     <span style="color:#dc2626;">Anomaly Hit Rate</span>
-                                    <span style="color:#dc2626;">5.98%</span>
+                                    <span style="color:#dc2626;">11.94%</span>
                                 </div>
                                 <div class="h-5 w-full rounded-full overflow-hidden" style="background:#fecaca;">
-                                    <div class="h-full rounded-full" style="width:23.92%;background:#dc2626;"></div>
+                                    <div class="h-full rounded-full" style="width:47.76%;background:#dc2626;"></div>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5">
-                                    <span style="color:#1e3a5f;">Career Avg (Inferno)</span>
-                                    <span style="color:#1e3a5f;">10.46%</span>
+                                    <span style="color:#1e3a5f;">Career Avg (Nuke)</span>
+                                    <span style="color:#1e3a5f;">19.77%</span>
                                 </div>
                                 <div class="h-5 w-full rounded-full overflow-hidden" style="background:#dbeafe;">
-                                    <div class="h-full rounded-full" style="width:41.84%;background:#1e3a5f;"></div>
+                                    <div class="h-full rounded-full" style="width:79.08%;background:#1e3a5f;"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="text-right text-[9px] font-mono text-slate-300 mb-5">visual scale: 0 – 25%</div>
                         <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="px-6 py-4 flex items-center justify-between">
                             <div class="text-[11px] font-bold text-slate-500 uppercase">Performance drop vs career baseline</div>
-                            <div style="font-size:1.6rem;font-weight:900;color:#dc2626;">−4.48 pp</div>
+                            <div style="font-size:1.6rem;font-weight:900;color:#dc2626;">−7.83 pp</div>
                         </div>
                     </div>
                 </div>
@@ -435,7 +366,7 @@
                             <div class="text-[10px] font-bold text-white/60 uppercase tracking-widest mb-0.5">Utility Economy</div>
                             <div class="text-white font-black text-sm uppercase tracking-wider">Utility Waste Signal</div>
                         </div>
-                        <span style="background:rgba(255,255,255,0.15);color:#fff;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;">+16% EXCESS</span>
+                        <span style="background:rgba(255,255,255,0.15);color:#fff;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;">+78% EXCESS</span>
                     </div>
                     <div class="p-8">
                         <div class="space-y-5 mb-7">
@@ -443,21 +374,21 @@
                                 <div class="flex items-end justify-between mb-2">
                                     <div>
                                         <div class="text-[10px] font-bold text-slate-400 uppercase">5 Maps Avg Utility Waste</div>
-                                        <div style="font-size:1.8rem;font-weight:900;color:#1e3a5f;line-height:1.1;">$12,860</div>
+                                        <div style="font-size:1.8rem;font-weight:900;color:#1e3a5f;line-height:1.1;">$2,300</div>
                                     </div>
                                     <span style="background:#eff6ff;color:#1e3a5f;font-size:10px;font-weight:900;padding:3px 12px;border-radius:99px;">Baseline 100%</span>
                                 </div>
                                 <div class="h-6 w-full rounded-full overflow-hidden" style="background:#dbeafe;">
-                                    <div class="h-full rounded-full" style="width:86%;background:#1e3a5f;"></div>
+                                    <div class="h-full rounded-full" style="width:56%;background:#1e3a5f;"></div>
                                 </div>
                             </div>
                             <div>
                                 <div class="flex items-end justify-between mb-2">
                                     <div>
                                         <div class="text-[10px] font-bold text-slate-400 uppercase">Anomaly Waste (Map 2)</div>
-                                        <div style="font-size:1.8rem;font-weight:900;color:#dc2626;line-height:1.1;">$14,900</div>
+                                        <div style="font-size:1.8rem;font-weight:900;color:#dc2626;line-height:1.1;">$4,100</div>
                                     </div>
-                                    <span style="background:#fef2f2;color:#dc2626;border:1px solid #fca5a5;font-size:10px;font-weight:900;padding:3px 12px;border-radius:99px;">116% of Avg</span>
+                                    <span style="background:#fef2f2;color:#dc2626;border:1px solid #fca5a5;font-size:10px;font-weight:900;padding:3px 12px;border-radius:99px;">178% of Avg</span>
                                 </div>
                                 <div class="h-6 w-full rounded-full overflow-hidden" style="background:#fecaca;">
                                     <div class="h-full rounded-full" style="width:100%;background:#dc2626;"></div>
@@ -466,15 +397,15 @@
                         </div>
                         <div class="grid grid-cols-3 gap-3">
                             <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:16px;" class="p-4 text-center">
-                                <div style="font-size:1.2rem;font-weight:900;color:#1e3a5f;">$12,860</div>
+                                <div style="font-size:1.2rem;font-weight:900;color:#1e3a5f;">$2,300</div>
                                 <div class="text-[9px] font-bold text-slate-400 uppercase mt-1">5 Map Avg</div>
                             </div>
                             <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="p-4 text-center">
-                                <div style="font-size:1.2rem;font-weight:900;color:#dc2626;">$14,900</div>
+                                <div style="font-size:1.2rem;font-weight:900;color:#dc2626;">$4,100</div>
                                 <div class="text-[9px] font-bold text-slate-400 uppercase mt-1">Actual Waste</div>
                             </div>
                             <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="p-4 text-center">
-                                <div style="font-size:1.2rem;font-weight:900;color:#dc2626;">+$2,040</div>
+                                <div style="font-size:1.2rem;font-weight:900;color:#dc2626;">+$1,800</div>
                                 <div class="text-[9px] font-bold text-slate-400 uppercase mt-1">Excess Waste</div>
                             </div>
                         </div>
@@ -493,7 +424,7 @@
             <div>
                 <div class="inline-flex items-center px-3 py-1 bg-brand/5 border border-brand/10 rounded-full text-[10px] font-black text-brand tracking-widest uppercase mb-3">Classified Intelligence Feed</div>
                 <h2 class="text-3xl font-extrabold text-brand mb-1">Intel Feed</h2>
-                <p class="text-slate-500 text-sm">Intercepted communications and open-source intelligence — Match X · Starladder 2025</p>
+                <p class="text-slate-500 text-sm">Intercepted communications and open-source intelligence — Match X · BLAST Rivals Fall 2025</p>
             </div>
             <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:16px;" class="px-5 py-3 flex items-center gap-3 flex-shrink-0">
                 <span class="animate-pulse text-lg" style="color:#dc2626;">●</span>
@@ -506,14 +437,33 @@
 
         </div>
 
-        <div onclick="navigateToEvidence('hltv')" style="background:#0f1923;border:1.5px solid #1e3a5c;border-radius:20px;padding:20px 24px;cursor:pointer;transition:opacity 0.15s;max-width:360px;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" class="flex items-center gap-4">
-            <div style="width:44px;height:44px;border-radius:50%;overflow:hidden;flex-shrink:0;">
-                <img src="HLTV.png" alt="HLTV" style="width:100%;height:100%;object-fit:cover;">
+        <!-- 2 Sources confirmed -->
+        <div class="glass-card p-8 rounded-[2.5rem] shadow-sm">
+            <div class="flex items-center gap-3 mb-6">
+                <div style="background:#fef2f2;color:#dc2626;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;border:1.5px solid #fca5a5;">2 SOURCES CONFIRMED</div>
+                <p class="text-[11px] text-slate-400 font-mono uppercase">Full intercepts available in Evidence Vault</p>
             </div>
-            <div>
-                <div style="color:#e8f4fd;font-weight:700;font-size:13px;font-family:'Outfit',sans-serif;">HLTV Forum</div>
-                <div style="color:#4b5563;font-size:10px;font-family:'JetBrains Mono',monospace;margin-top:2px;">Match thread · Public comments · Dec 2025</div>
-                <div style="color:#fca5a5;font-size:9px;font-weight:700;margin-top:6px;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">● OSINT CONFIRMED · click to view →</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div onclick="navigateToEvidence('telegram')" style="background:#0d1117;border-radius:20px;padding:20px 24px;cursor:pointer;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" class="flex items-center gap-4">
+                    <div style="background:#2b5278;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <i class="fa-brands fa-telegram" style="color:#fff;font-size:18px;"></i>
+                    </div>
+                    <div>
+                        <div style="color:#e8f4fd;font-weight:700;font-size:13px;font-family:'Outfit',sans-serif;">Telegram</div>
+                        <div style="color:#4b5563;font-size:10px;font-family:'JetBrains Mono',monospace;margin-top:2px;">Private group · Match Day intercept</div>
+                        <div style="color:#fca5a5;font-size:9px;font-weight:700;margin-top:6px;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">● INTERCEPTED · click to view →</div>
+                    </div>
+                </div>
+                <div onclick="navigateToEvidence('quora')" style="background:#fff8f7;border:1.5px solid #fecaca;border-radius:20px;padding:20px 24px;cursor:pointer;transition:opacity 0.15s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'" class="flex items-center gap-4">
+                    <div style="background:#b92b27;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <span style="color:#fff;font-weight:900;font-size:20px;font-family:'Outfit',sans-serif;">Q</span>
+                    </div>
+                    <div>
+                        <div class="text-brand font-bold text-sm">Quora</div>
+                        <div class="text-slate-400 text-[10px] font-mono mt-0.5">Public forum · November 2025</div>
+                        <div style="color:#dc2626;font-size:9px;font-weight:700;margin-top:6px;font-family:'JetBrains Mono',monospace;letter-spacing:0.05em;">● OSINT CONFIRMED · click to view →</div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -526,7 +476,7 @@
         <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
                 <h2 class="text-3xl font-extrabold text-brand mb-1">Evidence Vault</h2>
-                <p class="text-[11px] font-mono text-slate-400 uppercase tracking-widest">Starladder 2025 · Match X · Intercepted Communications + Video Evidence</p>
+                <p class="text-[11px] font-mono text-slate-400 uppercase tracking-widest">BLAST Rivals Fall 2025 · Match X · Intercepted Communications + Video Evidence</p>
             </div>
             <div class="flex items-center gap-3">
                 <span style="background:#1e3a5f;color:#c9a84c;font-size:10px;font-weight:900;padding:5px 14px;border-radius:99px;">SECURE ACCESS</span>
@@ -540,33 +490,361 @@
                 <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono">Documentary Evidence — Intercepted Communications</span>
                 <div class="h-px flex-1 bg-slate-200"></div>
             </div>
-            <!-- HLTV Screenshot -->
-            <div id="vault-hltv" class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm">
-                <!-- Header bar -->
-                <div style="background:linear-gradient(135deg,#0f1923 0%,#1e3a5c 100%);" class="px-8 py-5 flex items-center justify-between">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div id="vault-telegram" class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm">
+                <!-- Evidence label -->
+                <div style="background:linear-gradient(135deg,#0d1117 0%,#1c2733 100%);" class="px-6 py-4 flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <div style="width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0;">
-                            <img src="HLTV.png" alt="HLTV" style="width:100%;height:100%;object-fit:cover;">
-                        </div>
+                        <i class="fa-brands fa-telegram" style="color:#5b9bd5;font-size:18px;"></i>
                         <div>
-                            <div class="text-white font-black text-sm">HLTV — Match Thread Comments</div>
-                            <div class="text-[10px]" style="color:rgba(255,255,255,0.5);">3dmax vs FaZe · Starladder Budapest Major 2025 · December 2025</div>
+                            <div class="text-white font-black text-sm">Telegram — Group Chat</div>
+                            <div class="text-[10px]" style="color:rgba(255,255,255,0.35);">CS Pro Syndicate · BLAST Rivals Fall 2025</div>
                         </div>
                     </div>
-                    <span style="background:rgba(232,23,28,0.25);color:#fca5a5;border:1px solid rgba(232,23,28,0.4);font-size:9px;font-weight:900;padding:4px 14px;border-radius:99px;letter-spacing:0.08em;">OSINT</span>
+                    <span style="background:rgba(220,38,38,0.25);color:#fca5a5;border:1px solid rgba(220,38,38,0.4);font-size:9px;font-weight:900;padding:3px 12px;border-radius:99px;letter-spacing:0.08em;">INTERCEPTED</span>
                 </div>
-                <!-- Screenshots -->
-                <div style="background:#f8fafc;padding:24px;display:flex;flex-direction:column;gap:16px;">
-                    <img src="WhatsApp Image 2026-05-12 at 19.47.00.jpeg" alt="HLTV Forum Comments — Part 1" style="width:100%;border-radius:16px;border:2px solid #e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
-                    <img src="WhatsApp Image 2026-05-12 at 16.44.11.jpeg" alt="HLTV Forum Comments — Part 2" style="width:100%;border-radius:16px;border:2px solid #e2e8f0;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+
+                <!-- Desktop Telegram Window -->
+                <div style="font-family:'Outfit',sans-serif;">
+
+                    <!-- OS Window Title Bar -->
+                    <div style="background:#f0f0f0;padding:5px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ddd;">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <div style="width:14px;height:14px;border-radius:50%;background:#5b9bd5;display:flex;align-items:center;justify-content:center;">
+                                <i class="fa-brands fa-telegram" style="color:#fff;font-size:8px;"></i>
+                            </div>
+                            <span style="color:#555;font-size:11px;font-weight:500;">CS Pro Syndicate — Telegram</span>
+                        </div>
+                        <div style="display:flex;gap:14px;color:#888;font-size:13px;">
+                            <span style="cursor:pointer;">&#x2500;</span>
+                            <span style="cursor:pointer;">&#x25A1;</span>
+                            <span style="cursor:pointer;color:#c0392b;">&#x2715;</span>
+                        </div>
+                    </div>
+
+                    <!-- Telegram App Header -->
+                    <div style="background:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e8e8e8;">
+                        <div>
+                            <div style="font-weight:700;font-size:14px;color:#1a1a1a;">CS Pro Syndicate</div>
+                            <div style="font-size:11px;color:#999;">247 members, 18 online</div>
+                        </div>
+                        <div style="display:flex;gap:16px;align-items:center;">
+                            <i class="fa-solid fa-magnifying-glass" style="color:#bbb;font-size:14px;"></i>
+                            <i class="fa-solid fa-table-cells" style="color:#bbb;font-size:14px;"></i>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color:#bbb;font-size:14px;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Pinned message bar -->
+                    <div style="background:#fff;padding:7px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #efefef;cursor:pointer;">
+                        <i class="fa-solid fa-thumbtack" style="color:#5b9bd5;font-size:12px;transform:rotate(45deg);"></i>
+                        <div style="flex:1;min-width:0;border-left:3px solid #5b9bd5;padding-left:8px;">
+                            <div style="color:#5b9bd5;font-size:10.5px;font-weight:600;">Pinned message</div>
+                            <div style="font-size:11.5px;color:#666;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">BLAST Rivals Fall 2025 — Match Day. Today's matches start 19:00 CET 🏆</div>
+                        </div>
+                        <i class="fa-solid fa-xmark" style="color:#ccc;font-size:12px;"></i>
+                    </div>
+
+                    <!-- Messages area — green wallpaper -->
+                    <div style="background:#c8dba8;padding:10px 14px;display:flex;flex-direction:column;gap:2px;">
+
+                        <!-- Date pill -->
+                        <div style="text-align:center;margin:2px 0 8px;">
+                            <span style="background:rgba(0,0,0,0.18);color:#fff;font-size:11px;padding:3px 14px;border-radius:10px;">Today</span>
+                        </div>
+
+                        <!-- Pro_Analyst msg 1 -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">P</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#b97fd4;font-size:12px;font-weight:700;margin-bottom:3px;">Pro_Analyst</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">blast group stage today should be interesting. some strong matchups</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:34</span></div>
+                            </div>
+                        </div>
+
+                        <!-- scout99 msg 1 -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">S</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#e07b3a;font-size:12px;font-weight:700;margin-bottom:3px;">scout99</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">yeah been tracking this team all season.</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:51</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Pro_Analyst msg 2 -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#6b3fa0;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">P</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#b97fd4;font-size:12px;font-weight:700;margin-bottom:3px;">Pro_Analyst</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">true. veto will be key today</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">8:53</span></div>
+                            </div>
+                        </div>
+
+                        <!-- NightOwl_V -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a5c6b;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">N</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#3ab8d4;font-size:12px;font-weight:700;margin-bottom:3px;">NightOwl_V</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">anyone have the confirmed lineups yet?</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">9:22</span></div>
+                            </div>
+                        </div>
+
+                        <!-- scout99 msg 2 -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#8b4513;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">S</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#e07b3a;font-size:12px;font-weight:700;margin-bottom:3px;">scout99</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">full roster, no subs</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">9:31</span></div>
+                            </div>
+                        </div>
+
+                        <!-- K_intel opens convo -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
+                                </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">anyone watching the match tonight</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:08</span></div>
+                            </div>
+                        </div>
+
+                        <!-- RawSource_7 reply -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">R</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#5b9bd5;font-size:12px;font-weight:700;margin-bottom:3px;">RawSource_7</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">yeah obviously 🫡 btw got something to share — X won't be putting in a performance on their second map. solid source 🤫</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:16</span></div>
+                            </div>
+                        </div>
+
+                        <!-- K_intel surprised — reply quote -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:5px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
+                                </div>
+                                <div style="border-left:3px solid #5b9bd5;padding:3px 8px 3px 10px;background:#f0f6ff;border-radius:0 6px 6px 0;margin-bottom:6px;">
+                                    <div style="color:#5b9bd5;font-size:10.5px;font-weight:600;margin-bottom:1px;">RawSource_7</div>
+                                    <div style="color:#777;font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:200px;">yeah obviously 🫡 btw got something to share...</div>
+                                </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">lol wait he never has a bad game 😭</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:17</span></div>
+                            </div>
+                        </div>
+
+                        <!-- RawSource_7 reassures -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#2b5278;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">R</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="color:#5b9bd5;font-size:12px;font-weight:700;margin-bottom:3px;">RawSource_7</div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">not today. just keep a close eye on map 2. you'll see</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:19</span></div>
+                            </div>
+                        </div>
+
+                        <!-- K_intel ack -->
+                        <div style="display:flex;gap:8px;align-items:flex-end;margin-bottom:2px;">
+                            <div style="width:36px;height:36px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:14px;">K</div>
+                            <div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 12px 6px;max-width:78%;box-shadow:0 1px 2px rgba(0,0,0,0.08);">
+                                <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px;">
+                                    <span style="color:#4caf80;font-size:12px;font-weight:700;">K_intel</span>
+                                    <span style="background:#e0f2ea;color:#2e7d5e;font-size:9px;font-weight:700;padding:1px 6px;border-radius:6px;">ADMIN</span>
+                                </div>
+                                <div style="color:#1a1a1a;font-size:13px;line-height:1.5;">noted 👀</div>
+                                <div style="text-align:right;margin-top:3px;"><span style="color:#aaa;font-size:10px;">10:20</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Input bar -->
+                    <div style="background:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px;border-top:1px solid #e8e8e8;">
+                        <i class="fa-solid fa-paperclip" style="color:#bbb;font-size:17px;"></i>
+                        <div style="width:34px;height:34px;border-radius:50%;background:#1a6b4a;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:800;color:#fff;font-size:13px;">K</div>
+                        <div style="flex:1;background:#f4f4f4;border-radius:22px;padding:9px 15px;font-size:13px;color:#aaa;">Message</div>
+                        <i class="fa-solid fa-face-smile" style="color:#bbb;font-size:19px;"></i>
+                        <div style="width:36px;height:36px;border-radius:50%;background:#5b9bd5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                            <i class="fa-solid fa-paper-plane" style="color:#fff;font-size:14px;"></i>
+                        </div>
+                    </div>
                 </div>
-                <!-- Footer -->
-                <div style="background:#0f1923;border-top:1px solid #1e3a5c;padding:10px 32px;">
-                    <div style="color:#fca5a5;font-size:9px;font-family:'JetBrains Mono',monospace;text-align:center;letter-spacing:0.12em;">
-                        ⚠ OSINT ARCHIVE — CASE FILE 092-X-ANOMALY · HLTV MATCH THREAD · DECEMBER 2025
+
+                <!-- Footer tag -->
+                <div style="background:#0a0d12;border-top:1px solid #1c2733;padding:8px 24px;">
+                    <div style="color:#fca5a5;font-size:9px;font-family:'JetBrains Mono',monospace;text-align:center;letter-spacing:0.1em;">
+                        ⚠ INTERCEPTED COMMUNICATION — CASE FILE 092-X-ANOMALY · BLAST RIVALS FALL 2025
                     </div>
                 </div>
             </div>
+
+            <!-- Quora Screenshot -->
+            <div id="vault-quora" class="glass-card rounded-[2.5rem] overflow-hidden shadow-sm">
+            <!-- Header bar -->
+            <div style="background:linear-gradient(135deg,#a82400 0%,#b92b27 100%);" class="px-8 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div style="background:rgba(255,255,255,0.2);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                        <span style="color:#fff;font-weight:900;font-size:20px;font-family:'Outfit',sans-serif;">Q</span>
+                    </div>
+                    <div>
+                        <div class="text-white font-black text-sm">Quora — Public Forum Post</div>
+                        <div class="text-[10px]" style="color:rgba(255,255,255,0.5);">Archived · November 2025 · BLAST Rivals Fall 2025</div>
+                    </div>
+                </div>
+                <span style="background:rgba(255,255,255,0.15);color:#fff;font-size:9px;font-weight:900;padding:4px 14px;border-radius:99px;letter-spacing:0.1em;">OSINT</span>
+            </div>
+
+            <!-- Quora page mockup -->
+            <div style="background:#ffffff;padding:0;">
+                <!-- Quora top nav bar -->
+                <div style="background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 24px;display:flex;align-items:center;gap:16px;">
+                    <span style="color:#b92b27;font-weight:900;font-size:20px;font-family:'Outfit',sans-serif;">Quora</span>
+                    <div style="flex:1;background:#f4f4f4;border-radius:8px;padding:7px 14px;font-size:11px;color:#94a3b8;font-family:'Outfit',sans-serif;">Search Quora</div>
+                    <div style="width:28px;height:28px;border-radius:50%;background:#e2e8f0;"></div>
+                </div>
+
+                <div style="padding:24px 28px;max-width:660px;">
+                    <!-- Question -->
+                    <div style="border-bottom:1px solid #f1f5f9;padding-bottom:18px;margin-bottom:18px;">
+                        <h3 style="font-size:17px;font-weight:700;color:#1a1a1a;line-height:1.4;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            Why did Player X play so badly on Nuke in today's BLAST match? Is he okay?
+                        </h3>
+                        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                            <span style="background:#f4f4f4;color:#555;font-size:10px;padding:3px 10px;border-radius:99px;font-family:'Outfit',sans-serif;">Counter-Strike</span>
+                            <span style="background:#f4f4f4;color:#555;font-size:10px;padding:3px 10px;border-radius:99px;font-family:'Outfit',sans-serif;">Esports</span>
+                            <span style="background:#f4f4f4;color:#555;font-size:10px;padding:3px 10px;border-radius:99px;font-family:'Outfit',sans-serif;">CS2</span>
+                            <span style="color:#888;font-size:10px;font-family:'JetBrains Mono',monospace;">5 answers · 1.2K views</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer 1 -->
+                    <div style="border-bottom:1px solid #f1f5f9;padding-bottom:18px;margin-bottom:18px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#64748b,#334155);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;color:#fff;font-size:13px;">M</div>
+                            <div>
+                                <div style="font-size:13px;font-weight:600;color:#1a1a1a;font-family:'Outfit',sans-serif;">Mehul Desai</div>
+                                <div style="font-size:10px;color:#888;font-family:'Outfit',sans-serif;">CS fan · follows competitive scene since 2018</div>
+                            </div>
+                        </div>
+                        <p style="font-size:13px;color:#374151;line-height:1.65;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            Watched the whole match live and honestly it looked really strange. On Overpass he was the best player on his team — top fragging, taking duels confidently. Then on Nuke he just completely disappeared. Missing shots he would normally hit in his sleep, not using utilities, just looking lost. Nuke is literally his best map so it made no sense at all.
+                        </p>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">↑ 214</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Comment</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer 2 -->
+                    <div style="border-bottom:1px solid #f1f5f9;padding-bottom:18px;margin-bottom:18px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#b45309,#92400e);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;color:#fff;font-size:13px;">S</div>
+                            <div>
+                                <div style="font-size:13px;font-weight:600;color:#1a1a1a;font-family:'Outfit',sans-serif;">Sarthak Nair</div>
+                                <div style="font-size:10px;color:#888;font-family:'Outfit',sans-serif;">Watches BLAST events regularly</div>
+                            </div>
+                        </div>
+                        <p style="font-size:13px;color:#374151;line-height:1.65;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            Something was definitely off. His spray control was non-existent — like he wasn't even trying to control recoil. And he kept staying passive in situations where he'd normally be aggressive. Everyone in the stream chat noticed it too. Could be tilt or something personal but it looked very deliberate honestly.
+                        </p>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">↑ 97</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Comment</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer 3 -->
+                    <div style="border-bottom:1px solid #f1f5f9;padding-bottom:18px;margin-bottom:18px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#2d5a9e);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;color:#fff;font-size:13px;">A</div>
+                            <div>
+                                <div style="font-size:13px;font-weight:600;color:#1a1a1a;font-family:'Outfit',sans-serif;">Aryan Kapoor</div>
+                                <div style="font-size:10px;color:#888;font-family:'Outfit',sans-serif;">Esports enthusiast · Delhi</div>
+                            </div>
+                        </div>
+                        <p style="font-size:13px;color:#374151;line-height:1.65;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            Yeah even my friends who don't follow CS noticed something felt wrong. The fact that he was doing so well right before on Overpass makes it even harder to explain. Bad day happens but this felt different. Hope there's a proper explanation from the org.
+                        </p>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">↑ 63</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Comment</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer 4 -->
+                    <div style="border-bottom:1px solid #f1f5f9;padding-bottom:18px;margin-bottom:18px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#065f46,#047857);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;color:#fff;font-size:13px;">R</div>
+                            <div>
+                                <div style="font-size:13px;font-weight:600;color:#1a1a1a;font-family:'Outfit',sans-serif;">Rohan Verma</div>
+                                <div style="font-size:10px;color:#888;font-family:'Outfit',sans-serif;">Former semi-pro player · CSGO since 2016</div>
+                            </div>
+                        </div>
+                        <p style="font-size:13px;color:#374151;line-height:1.65;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            From a player's perspective, what I saw wasn't mechanical failure — it was decision-making failure. He was consistently making the wrong call at the wrong time, almost like he already knew the outcome. At that level you don't just "forget" how to play your best map. The body language in the post-round walk said it all.
+                        </p>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">↑ 41</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Comment</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Answer 5 -->
+                    <div style="padding-bottom:12px;margin-bottom:6px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                            <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#5b21b6);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;color:#fff;font-size:13px;">P</div>
+                            <div>
+                                <div style="font-size:13px;font-weight:600;color:#1a1a1a;font-family:'Outfit',sans-serif;">Priya Mehta</div>
+                                <div style="font-size:10px;color:#888;font-family:'Outfit',sans-serif;">CS2 analyst · covers tier-1 tournaments</div>
+                            </div>
+                        </div>
+                        <p style="font-size:13px;color:#374151;line-height:1.65;font-family:'Outfit',sans-serif;margin-bottom:10px;">
+                            I track stats across tournaments and his numbers on that map were statistical outliers — well below his career average in nearly every metric. Position selection, utility usage, kill timing. It's the kind of performance that gets flagged in integrity reviews. Whether that means anything is for the org to investigate but it stood out immediately.
+                        </p>
+                        <div style="display:flex;align-items:center;gap:14px;">
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">↑ 29</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Comment</span>
+                            <span style="font-size:11px;color:#888;font-family:'Outfit',sans-serif;">Share</span>
+                        </div>
+                    </div>
+
+                    <!-- Related questions -->
+                    <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:4px;">
+                        <div style="font-size:12px;font-weight:700;color:#555;font-family:'Outfit',sans-serif;margin-bottom:10px;">Related Questions</div>
+                        <div style="display:flex;flex-direction:column;gap:8px;">
+                            <div style="font-size:12px;color:#b92b27;font-family:'Outfit',sans-serif;cursor:pointer;">Has any CS2 pro ever been caught match-fixing at a BLAST event?</div>
+                            <div style="font-size:12px;color:#b92b27;font-family:'Outfit',sans-serif;cursor:pointer;">What are the signs of deliberate underperformance in esports?</div>
+                            <div style="font-size:12px;color:#b92b27;font-family:'Outfit',sans-serif;cursor:pointer;">How does BLAST handle integrity investigations for players?</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div style="background:#fef2f2;border-top:1px solid #fecaca;padding:10px 32px;">
+                <div style="color:#dc2626;font-size:9px;font-family:'JetBrains Mono',monospace;text-align:center;letter-spacing:0.12em;">
+                    ⚠ OSINT ARCHIVE — CASE FILE 092-X-ANOMALY · PUBLIC POST · NOVEMBER 2025
+                </div>
+            </div>
+        </div>
+
+        </div><!-- end 2-col grid -->
 
         <!-- ── Video Evidence ── -->
         <div class="mt-10">
@@ -628,8 +906,7 @@
                     </div>
                 </div>
 
-                <!--
-                   Video 5 
+                <!-- Video 5 -->
                 <div class="glass-card rounded-2xl overflow-hidden shadow-sm">
                     <div style="background:#0a0e17;" class="aspect-video flex items-center justify-center relative">
                         <video controls class="w-full h-full absolute inset-0 object-contain" style="background:#000;">
@@ -640,8 +917,6 @@
                         <div class="text-[11px] font-mono text-slate-500">clip2</div>
                     </div>
                 </div>
-
-                -->
 
             </div>
         </div>
@@ -655,8 +930,8 @@
     const tournamentLogs = [
         { match:'Match 26 (1)', map:'Inferno',  line:'12.5', kills:20, flagged:false },
         { match:'Match 26 (2)', map:'Train',    line:'12.5', kills:20, flagged:false },
-        { match:'Match X (1)',  map:'Dust2',   line:'13.5', kills:12, flagged:false },
-        { match:'Match X (2)',  map:'Inferno', line:'14.5 → 13.5', kills:9, flagged:true },
+        { match:'Match X (1)',  map:'Overpass', line:'13.5', kills:12, flagged:false },
+        { match:'Match X (2)',  map:'Nuke',     line:'14.5 → 12.5', kills:9, flagged:true },
         { match:'Match X (3)',  map:'Ancient',  line:'13.5', kills:10, flagged:false },
         { match:'Match 35 (1)', map:'Mirage',   line:'13.5', kills:18, flagged:false },
         { match:'Match 35 (2)', map:'Dust 2',   line:'13.5', kills:12, flagged:false },
@@ -665,16 +940,6 @@
         { match:'Match 40 (1)', map:'Nuke',     line:'13.5', kills:12, flagged:false },
         { match:'Match 40 (2)', map:'Dust 2',   line:'13.5', kills:13, flagged:false },
         { match:'Match 40 (3)', map:'Inferno',  line:'13.5', kills:23, flagged:false },
-    ];
-
-    const marketRows = [
-        { match:'5',      fluctuation:'13.5',        time:'No Fluctuations',  map:'Nuke (#6)',     kills:14, team:'paiN Gaming #14',  flagged:false },
-        { match:'10',     fluctuation:'13.5',        time:'No Fluctuations',  map:'Nuke (#6)',     kills:6,  team:'Vitality #1',      flagged:false },
-        { match:'24 (1)', fluctuation:'13.5',        time:'No Fluctuations',  map:'Dust2 (#7)',    kills:12, team:'PARIVISION #17',   flagged:false },
-        { match:'24 (2)', fluctuation:'13.5',        time:'No Fluctuations',  map:'Inferno (#4)',  kills:19, team:'PARIVISION #17',   flagged:false },
-        { match:'24 (3)', fluctuation:'12.5 - 13.5', time:'Before start map3', map:'Ancient (#3)', kills:16, team:'PARIVISION #17',   flagged:false },
-        { match:'30 (1)', fluctuation:'13.5',        time:'No Fluctuations',  map:'Dust2 (#7)',    kills:11, team:'FaZe #5',          flagged:false },
-        { match:'30 (2)', fluctuation:'14.5 - 13.5', time:'Before start map2', map:'Inferno (#4)', kills:4,  team:'FaZe #5',          flagged:true },
     ];
 
     let activeCharts = { market:null, perf:null };
@@ -696,17 +961,15 @@
     function renderMarketAssets() {
         const tbody = document.getElementById('marketTableBody');
         tbody.innerHTML = '';
-        marketRows.forEach(row => {
+        tournamentLogs.forEach(row => {
             const tr = document.createElement('tr');
             if (row.flagged) tr.className = 'flagged';
             tr.className += ' border-b border-slate-100 hover:bg-slate-50 transition-colors';
             tr.innerHTML = `
                 <td class="px-8 py-4 font-bold text-brand">${row.match}</td>
-                <td class="px-8 py-4 text-center font-mono font-bold">${row.fluctuation}</td>
-                <td class="px-8 py-4 text-slate-500 font-mono">${row.time}</td>
                 <td class="px-8 py-4 text-slate-500 font-mono italic">${row.map}</td>
+                <td class="px-8 py-4 text-center font-mono font-bold">${row.line}</td>
                 <td class="px-8 py-4 text-right font-black text-lg">${row.kills}</td>
-                <td class="px-8 py-4 text-slate-500 font-mono">${row.team}</td>
             `;
             tbody.appendChild(tr);
         });
@@ -716,10 +979,10 @@
         activeCharts.market = new Chart(ctx, {
             type:'line',
             data:{
-                labels:['Map 1 Start (00:50:21)','Map 1 Mid (01:17:41)','Map 1 End (01:31:01)','T2-15 min (01:35:01)','Map 2 Start (01:49:41)'],
+                labels:['17:00','17:20','17:40','17:45','18:25','START (19:00)'],
                 datasets:[{
                     label:'Kill Line',
-                    data:[14.5,14.5,14.5,13.5,13.5],
+                    data:[14.5,14.5,14.5,12.5,12.5,12.5],
                     borderColor:'#dc2626',
                     backgroundColor:'rgba(220,38,38,0.05)',
                     fill:true, tension:0, borderWidth:4,
@@ -733,7 +996,7 @@
                 responsive:true, maintainAspectRatio:false,
                 plugins:{ legend:{display:false}, tooltip:{backgroundColor:'#1e3a5f', callbacks:{label: c=>' Kill Line: '+c.parsed.y}} },
                 scales:{
-                    y:{min:12,max:16,grid:{color:'#f1f5f9'},ticks:{color:'#94a3b8'}},
+                    y:{min:10,max:16,grid:{color:'#f1f5f9'},ticks:{color:'#94a3b8'}},
                     x:{grid:{display:false},ticks:{color:'#94a3b8'}}
                 }
             }
@@ -764,7 +1027,7 @@
                 labels:['KDR (K/D)','KPR (K/R)','ADR (Dmg)','DPR (Deaths)'],
                 datasets:[
                     {label:'Career Avg', data:[100,100,100,100], backgroundColor:'#1e3a5f', borderRadius:10},
-                    {label:'Anomaly Map 2', data:[24,71,49,308], backgroundColor:'#dc2626', borderRadius:10}
+                    {label:'Anomaly Map 2', data:[57,63,60,141], backgroundColor:'#dc2626', borderRadius:10}
                 ]
             },
             options:{
@@ -774,7 +1037,7 @@
                     tooltip:{backgroundColor:'#1e3a5f', callbacks:{label: ctx=>' '+ctx.dataset.label+': '+ctx.parsed.y+'%'}}
                 },
                 scales:{
-                    y:{min:0,max:320,grid:{color:'#f1f5f9'},ticks:{color:'#94a3b8',callback:v=>v+'%'}},
+                    y:{min:0,max:160,grid:{color:'#f1f5f9'},ticks:{color:'#94a3b8',callback:v=>v+'%'}},
                     x:{grid:{display:false},ticks:{color:'#94a3b8',font:{weight:'bold'}}}
                 }
             },
